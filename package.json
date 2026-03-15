@@ -1,0 +1,15 @@
+{
+  "name": "lmsmern",
+  "version": "1.0.0",
+  "description": "LMS MERN Stack",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "npm run dev --prefix backend",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
